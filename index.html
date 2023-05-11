@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>InTaVia, CRM SIG 2023-05-11</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/acdh-ch-oeaw.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<div id="header" style="z-index: 99999;">InTaVia, CRM SIG 5-2023
+			<br/>Matthias Schlögl, ACDH-CH (Austrian Academy of Sciences)
+		</div>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+					## In/Tangible European Heritage - Visual Analysis, Curation and Communication
+					#### CRM SIG 5-2023
+					<br/>
+					<small><a href="https://github.com/sennierer/intavia-crm-sig-5-2023">https://github.com/sennierer/intavia-crm-sig-5-2023</a></small>
+					<br/>
+					<p>
+						<small style="font-style: italic;">Space for running through the slides, ESC for an overview</small>
+					</p>
+					</textarea>
+				</section>
+				<section data-markdown="sections/about_intavia.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/intro_intavia.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/workflow_model.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/idm-rdf.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/idm-json.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/intavia_api.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/intavia_code_examples.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="sections/challenges.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					# Thanks
+					</textarea>
+				</section>
+				<section data-background-iframe="http://127.0.0.1:8080/lemmas"
+          data-background-interactive></section>
+				<section data-background-iframe="http://127.0.0.1:8080/article/4"
+          data-background-interactive></section>
+				<section data-background-iframe="https://apis.acdh.oeaw.ac.at"
+          data-background-interactive></section>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/animate/plugin.js"></script>
+		<script src="plugin/animate/svg.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: 1400,
+				height: 900,
+				controls: false,
+				//showNotes: 'separate-page',
+				//pdfSeparateFragments: false,
+				margin: 0.04,
+
+				minScale: 0.2,
+				maxScale: 2.0,
+
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAnimate ],
+				animate: {
+				    autoplay: true
+	 		   }
+
+			});
+			feather.replace();
+		</script>
+	</body>
+</html>
